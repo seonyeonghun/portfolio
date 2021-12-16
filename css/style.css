@@ -1,0 +1,56 @@
+h1 {
+    display: none; /* 표시 : 안함 */
+}
+.wrap { /* class="wrap"인 부분 스타일 지정 */
+    width: 1000px; /* 가로 폭 : 1000픽셀 */
+    margin: 0 auto; /* 바깥 여백 : 상하 0, 좌우 알아서(자동계산) */
+}
+header { /* <header>...</header> 태그 영역의 스타일 지정 */
+    display: flex; /* 표시 : 플렉스??(좌-우 배치) */
+    justify-content: space-between;
+    height: 80px; /* 높이 : 80픽셀 */
+    align-items: center; /* 아이템 정렬 : (세로) 가운데 */
+}
+.logo {
+    font-size: 1.750rem; /*글자-크기 : 1.750 배(기본값x1.750) */
+}
+.menu {
+    font-size: 1.250rem;
+}
+.menu a {
+    color: #191919; /* 글자색 : 검정색 */
+    text-decoration: none; /* 텍스트-꾸밈 : (밑줄)없음 */
+    margin: 0 0 0 15px;
+}
+
+/* 화면의 가로폭이 360픽셀이 최대라면 */
+@media screen and (max-width: 360px){  
+    /* 여기에 있는 스타일을 적용해줘~! */
+    .wrap {
+        width: 100%;
+    }
+    header {
+        flex-direction: column; /*플렉스-방향: 컬럼방향(=세로) 적용*/
+        height: auto; /* 높이 : 알아서 자동으로 */
+    }
+    .logo {
+        font-size: 2rem; /* 글자크기 : 기본값의 2배 크기 */
+        padding: 1rem 0;  /* 안 여백 : 상하에는 기본값 1배 크기 */
+    }
+    .menu {
+        background-color: darkslateblue; /* 배경색 : 푸른색계통 */
+        width: 100%; /* 넓이(폭) : 가로 100% */
+        padding: 1rem 0; /* 안여백 : 상하만 기본값 1배 크기 */
+        font-size: 1.250rem; /* 글자 크기 : 기본글자크기의 1.250 배 */
+        display: flex; /* 표시 : 플렉스 방식 */
+        justify-content: center; /* 컨텐츠 정렬 : 여백을 포함해서 */
+    }
+    .menu a {
+        color: white; /* 색상 :흰색 */
+        text-transform: uppercase; /* 글자변형: 대문자로 */
+        margin: 0 1rem; /* 바깥여백 : 좌우만 기본값 1배 */
+    }
+    .profile img {
+        max-width: 100%; /* 최대 폭 : 가로 100% */
+    }
+}
