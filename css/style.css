@@ -23,8 +23,8 @@ header { /* <header>...</header> 태그 영역의 스타일 지정 */
     margin: 0 0 0 15px;
 }
 
-/* 화면의 가로폭이 360픽셀이 최대라면 */
-@media screen and (max-width: 360px){  
+/* 화면의 가로폭이 보통 480px 이하를 최대라면 */
+@media screen and (max-width: 480px){  
     /* 여기에 있는 스타일을 적용해줘~! */
     .wrap {
         width: 100%;
