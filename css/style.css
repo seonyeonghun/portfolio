@@ -53,4 +53,29 @@ header { /* <header>...</header> 태그 영역의 스타일 지정 */
     .profile img {
         max-width: 100%; /* 최대 폭 : 가로 100% */
     }
+
+    .location {
+        display: flex; /* 표시 : 플렉스(무조건 가로배치-좌우로) */
+        justify-content:flex-end; /* 내용정렬 : 오른쪽 끝부분 */
+        background: #191919; /* 배경색상 : 검정색 */
+        padding-right: 5%; /* 오른쪽 안여백 : 전체 크기의 5%정도 */
+        padding-top: 2%; /* 윗쪽 */
+        padding-bottom: 2%; /* 아랫쪽 */
+        color: white; /* 글자색상 : 흰색 */
+    }
+    .location a { /* .location 안에 있는 a를 */
+        color: white; /* 글자색상 : 흰색 */
+        text-decoration: none; /* 글자꾸밈 : 밑줄 없앰 */
+    }
+    .contents ul {/* .location 안에 있는 ul를 */
+        list-style-type: disc; /* 타입 : 디스크 */
+        list-style-position: inside; /* 위치 : 안쪽(들여쓰기) */
+    }
+
+    .inner {
+        margin: 2% 5%; /* 바깥여백 : 상하 2%, 좌우 5% */
+    }
+    .inner iframe { /* 유투브 영상 iframe 태그를 */
+        max-width: 100%; /* 최대폭 : 기기의 100%를 초과하지 않게 */
+    }
 }
